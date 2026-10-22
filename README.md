@@ -1,4 +1,4 @@
-# Mod7_Dominio_SCSS — arquitectura inicial segura
+# Mod7_Dominio_SCSS
 
 ## Estructura
 - `scss/main.scss`: entrada de compilación.
@@ -16,20 +16,11 @@
 
 ## Instalar Sass
 Desde la raíz del proyecto:
-```bash
 npm init -y
 npm install --save-dev sass
-```
 
 ## Compilar una vez
-```bash
 npx sass scss/main.scss css/styles.css
-```
 
 ## Compilar en modo observación
-```bash
 npx sass --watch scss/main.scss:css/styles.css
-```
-
-## Importante
-Esta es una etapa de transición segura: conserva la hoja original completa para que el diseño no cambie al empezar a usar Sass. Para que la rúbrica considere terminada la refactorización modular, migrá progresivamente bloques de `_legacy.scss` a los parciales correspondientes, eliminando cada bloque del original al moverlo y verificando la salida después de cada cambio. No dejes reglas duplicadas en ambos lugares.
