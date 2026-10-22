@@ -1,0 +1,17 @@
+// Variables Sass para reutilizar valores nuevos durante la refactorización.
+// Los custom properties CSS del archivo original (:root --electric, --navy, etc.)
+// se conservan dentro de _legacy.scss para no alterar la cascada.
+
+$color-black: #0a0a0a;
+$color-midnight: #191970;
+$color-cyan: #00f0ff;
+$color-white: #ffffff;
+$color-slate: #2a2a2a;
+
+$font-family-base: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+$breakpoint-small: 480px;
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 767px;
+$breakpoint-navbar: 991.98px;
+$breakpoint-wide: 1199.98px;

@@ -1,0 +1,21 @@
+// Punto de entrada único de Sass.
+// Los módulos utilities no generan CSS por sí mismos.
+// El CSS original se importa al final y conserva el orden de sus reglas.
+
+@use "utilities/variables" as vars;
+@use "utilities/mixins" as mixins;
+
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";
+
+// Fase de compatibilidad: compila la hoja original sin reorganizar selectores.
+// Cuando se migre cada bloque a su parcial, quitar ese bloque de _legacy.scss
+// y mantener el orden de salida validado visualmente.
+@use "components/legacy";
